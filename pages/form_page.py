@@ -18,4 +18,12 @@ class FormPage(BasePage):
         self.modal_dialog = WebElement(driver, 'body > div.fade.modal.show > div')
         self.btn_close_modal = WebElement(driver, '#closeLargeModal')
 
+        self.hobbies = WebElement(driver, '#hobbies-checkbox-1')
+        self.current_address = WebElement(driver, 'currentAddress')
+        self.user_form = WebElement(driver, '#userForm')
+
+        self.btn_state = WebElement(driver, '#state')
+        self.btn_city = WebElement(driver, '#city')
+        self.btn_NCR = WebElement(driver, "//*[contains(text(),'NCR')]", 'xpath')
+
 
